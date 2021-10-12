@@ -37,6 +37,7 @@ export const AppointmentsPage = (props) => {
             setTitle('');
             setDate('');
             setTime('');
+            setContact('');
         } else {
             document.getElementById("contactError").style.display = 'block';
         }

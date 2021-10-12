@@ -69,7 +69,8 @@ export const AppointmentForm = ({
                    placeholder="Select appointment time"
                    required />
             <label htmlFor='contact' style={labelStyles}>Select a contact</label>
-            <ContactPicker contacts={contacts}
+            <ContactPicker contact={contact}
+                           contacts={contacts}
                            setContact={setContact}
                            id='contact' />
             <p id="contactError"
