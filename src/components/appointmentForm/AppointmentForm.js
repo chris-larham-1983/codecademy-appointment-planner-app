@@ -21,6 +21,8 @@ export const AppointmentForm = ({
         return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
     };
 
+    const today = getTodayString();
+
     const handleTitleChange = (e) => {
         const title = e.target.value;
         setTitle(title);
@@ -57,7 +59,7 @@ export const AppointmentForm = ({
                    onChange={handleDateChange}
                    value={date}
                    placeholder="Select appointment date"
-                   min={getTodayString}
+                   min={today}
                    required />
             <label htmlFor='time' style={labelStyles}>Specify appointment time</label>
             <input type='time'
